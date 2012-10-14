@@ -1,0 +1,33 @@
+
+<html>  
+    <head>  
+        <title>Raphael Play</title>  
+        <script type="text/javascript" src="../raphael/raphael.js"></script>  
+        <script type="text/javascript"  src="ng_constants.js"></script>  
+        <script type="text/javascript"  src="ng_gui.js"> </script>  
+        <script type="text/javascript"  src="ng.js"></script>  
+        <style type="text/css">  
+            #canvas_container {  
+                width: 400px;  
+                border: 1px solid #aaa;  
+            }  
+        </style>  
+    </head>  
+    <body>  
+<form name="NumberGuessing" action="" onsubmit="workGuess();return false;">
+  <table >
+    <tr>
+      <td> <input type="text" name="g_c1" align="right"></td>
+      <td> <input type="text" name="g_c2" align="right"></td>
+    </tr>
+    <tr>
+      <td><input type="button" width="60" class="button" value="guess" onclick="workGuess()"></td>
+      <td><input type="button" width="60" class="button" value="new game" onclick="newGame()"></td>
+    </tr>
+    <tr><td><input type="button" width="60" class="button" value="solution" onclick="solution()"></td>
+    </tr>
+  </table>
+</form>
+        <div id="canvas_container"></div>  
+    </body>  
+</html>  
