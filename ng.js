@@ -42,6 +42,16 @@ function calcGuessResult(gc1, gc2, hintType) {
   function workGuess() {
    g_c1 = parseInt(window.document.NumberGuessing.g_c1.value);
    g_c2 = parseInt(window.document.NumberGuessing.g_c2.value);
+
+    if(isNaN(g_c1)){
+      alert("g_c1 is not set correctly");
+      return;
+    }
+    
+    if(isNaN(g_c2)){
+      alert("g_c2 is not set correctly");
+      return;
+    }
     
    workGuessWorker(g_c1, g_c2);
   }
