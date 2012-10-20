@@ -31,4 +31,11 @@ $(document).ready(function() {
   $.get("ai_example_descent.js", function(data, b) {
     window.document.NumberGuessing.user_algo.value = data;
   }, 'text')
+  canvcont = document.getElementById('canvas_container');
+  jQuery(canvcont).ready(function(){
+    $(canvcont).click(function(e){
+      alert("c1: " + (e.pageX-1-this.offsetLeft) + "; "+
+            "c2: " + (c2Scaling-(e.pageY-1-this.offsetTop)));
+    }); 
+  });
 });

@@ -72,12 +72,5 @@ function workGuessWorker(g_c1, g_c2){
 $(document).ready(function() {  
   canvcont = document.getElementById('canvas_container');
   paper = new  Raphael(canvcont, c1Scaling, c2Scaling);  
-
-  jQuery(canvcont).ready(function(){
-    $(canvcont).click(function(e){
-      alert("c1: " + (e.pageX-1-this.offsetLeft) + "; "+
-            "c2: " + (c2Scaling-(e.pageY-1-this.offsetTop)));
-    }); 
-  });
   newGame();
 })
