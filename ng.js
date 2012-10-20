@@ -66,7 +66,7 @@ function workGuessWorker(g_c1, g_c2){
   guessesSoFar.push({c1:g_c1, c2:g_c2, hintType:hintType, sign: calcGuessResult(g_c1, g_c2, hintType) });
   drawExcludedArea(g_c1, g_c2, hintType);
 
-  guessesSoFar.map(function(item){ paper.circle(item.c1,c2Scaling-item.c2,1);})
+  guessesSoFar.map(function(item){ paper.circle(item.c1,c2Scaling-item.c2,2);})
 }
 
 $(document).ready(function() {  
