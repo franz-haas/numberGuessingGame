@@ -1,32 +1,32 @@
-
 <html>  
-    <head>  
-        <title>Number guessing yourself</title>  
-        <script type="text/javascript" src="raphael.js"></script>  
-        <script type="text/javascript"  src="ng_constants.js"></script>  
-        <script type="text/javascript"  src="ng_gui.js"> </script>  
-        <script type="text/javascript"  src="ng.js"></script>  
-        <style type="text/css">  
-            #canvas_container {  
-                width: 400px;  
-                border: 1px solid #aaa;  
-            }  
-        </style>  
-    </head>  
-    <body>  
-<form name="NumberGuessing" action="" onsubmit="workGuess();return false;">
-  <table >
-    <tr>
-      <td> Guess Nr 1: <input type="text" name="g_c1" align="right"></td>
-      <td> Guess Nr 2: <input type="text" name="g_c2" align="right"></td>
-    </tr>
-    <tr>
-      <td><input type="button" width="80" class="button" value="I am feeling lucky" onclick="workGuess()"></td>
-      <td><input type="button" width="80" class="button" value="new game" onclick="newGame()"></td>
-      <td><input type="button" width="80" class="button" value="solution" onclick="solution()"></td>
-    </tr>
-  </table>
-</form>
-        <div id="canvas_container"></div>  
-    </body>  
-</html>  
+  <head>  
+    <title>Number guessing yourself</title>  
+    <script type="text/javascript" src="jquery.js"></script>  
+    <script type="text/javascript" src="raphael.js"></script>  
+    <script type="text/javascript"  src="ng_constants.js"></script>  
+    <script type="text/javascript"  src="ng_gui.js"> </script>  
+    <script type="text/javascript"  src="ng.js"></script>  
+    <style type="text/css">  
+      #canvas_container {  
+      width: 400px;  
+      border: 1px solid #aaa;  
+      }  
+    </style>  
+  </head>  
+  <body>  
+    <form name="NumberGuessing" action="" onsubmit="workGuess();return false;">
+      <table >
+        <tr>
+          <td> Guess Nr 1: <input type="text" name="g_c1" align="right"></td>
+          <td> Guess Nr 2: <input type="text" name="g_c2" align="right"></td>
+        </tr>
+        <tr>
+          <td><input type="button" width="80" class="button" value="I am feeling lucky" onclick="workGuess()"></td>
+          <td><input type="button" width="80" class="button" value="new game" onclick="newGame()"></td>
+          <td><input type="button" width="80" class="button" value="solution" onclick="solution()"></td>
+        </tr>
+      </table>
+    </form>
+    <div id="canvas_container"></div>  
+  </body>  
+</html>

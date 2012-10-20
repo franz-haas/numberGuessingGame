@@ -25,3 +25,10 @@ function ai_step(){
 
   workGuessWorker(g_c1, g_c2);
 }
+
+
+$(document).ready(function() {  
+  $.get("ai_example_descent.js", function(data, b) {
+    window.document.NumberGuessing.user_algo.value = data;
+  }, 'text')
+});
